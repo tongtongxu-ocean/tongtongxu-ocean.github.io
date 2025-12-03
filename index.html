@@ -39,10 +39,19 @@
     padding-left: 20px; }
 
   @media (max-width: 576px) {
+
+    /* Make masthead taller on phones */
+    .masthead {
+      height: 75vh;        /* more vertical room */
+      min-height: 550px;   /* ensures room even on short screens */
+    }
+
+    /* Adjust the title */
     .masthead h1 {
-      font-size: 1.9rem;
-      line-height: 1.35;
-      padding: 20px 10px;
+      font-size: 2.2rem;   /* ~35px (slightly larger than before) */
+      line-height: 1.35;   /* more breathing room between lines */
+      padding-top: 20px;   /* extra space above the text */
+      padding-bottom: 15px;/* extra space below the text */
     }
   }
   </style>
