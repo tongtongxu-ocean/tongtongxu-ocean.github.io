@@ -49,18 +49,48 @@
     }
   }
 
-  .section-title {
+  .research-title {
     font-weight: bold;
     text-transform: uppercase;
     color: #17a2b8;           /* Bootstrap text-info color */
     margin-bottom: 8px;       /* space between title and underline */
   }
 
-  .section-underline {
+  .research-underline {
     width: 45px;              /* length of underline */
     height: 3px;              /* thickness */
     background-color: #17a2b8;
     margin-bottom: 22px;      /* spacing below the underline */
+  }
+
+  .other-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;           /* Bootstrap text-info color */
+    margin-bottom: 8px;       /* space between title and underline */
+  }
+
+  .teal-underline,
+  .black-underline {
+    display: none;
+  }
+  @media (max-width: 576px) {
+
+    .teal-underline {
+      display: block;
+      width: 45px;              /* length of underline */
+      height: 3px;              /* thickness */
+      background-color: #17a2b8;
+      margin-bottom: 22px;      /* spacing below the underline */
+    }
+
+    .black-underline {
+      display: block;
+      width: 45px;              /* length of underline */
+      height: 3px;              /* thickness */
+      background-color: #000000;
+      margin-bottom: 22px;      /* spacing below the underline */
+    }
   }
   </style>
 </head>
@@ -168,8 +198,8 @@
   <div class="row">
     <div class="col-md-3 col-12 mb-2 mb-md-0">
       <!-- <strong class="text-info" style="text-transform:uppercase;">Research Interests</strong> -->
-      <div class="section-title">Research Interests</div>
-      <div class="section-underline"></div>
+      <div class="research-title">Research Interests</div>
+      <div class="research-underline"></div>
     </div>
     <div class="d-none d-md-block" style="width:25px;"></div>
 
@@ -190,7 +220,8 @@
 <div class="container" style="padding-left:30px;margin-top:40px;">
   <div class="row">
     <div class="col-md-3 col-12 mb-2 mb-md-0">
-      <strong style="text-transform:uppercase;">Academic Position</strong>
+      <div class="other-title">Academic Position</div>
+      <div class="black-underline"></div>
     </div>
     <div class="col-md-9 col-12 pl-md-5 ps-3 mt-2 mt-md-0">
       <p> Research Scientist, <strong>CIRES/NOAA Physical Sciences Laboratory</strong> (2022-present) </p>
@@ -202,7 +233,8 @@
 <div class="container" style="padding-left:30px;margin-top:20px;">
   <div class="row">
   <div class="col-md-3 col-12 mb-2 mb-md-0">
-    <strong class="text-info" style="text-transform:uppercase;">Education</strong>
+    <div class="research-title">Education</div>
+    <div class="teal-underline"></div>
   </div>
   <!-- <div class="col-1 nav flex-column nav-pills">
     <p class="nav-link active"  style="text-transform:uppercase;"><strong>Education</strong></a>
@@ -243,7 +275,8 @@
 <div class="container" style="padding-left:30px;margin-top:20px;padding-bottom:20px;">
   <div class="row">
     <div class="col-md-3 col-12 mb-2 mb-md-0">
-      <strong style="text-transform:uppercase;">Experience</strong>
+      <div class="other-title">Experience</div>
+      <div class="black-underline"></div>
     </div>
     <div class="col-md-9 col-12 pl-md-5 ps-3 mt-2 mt-md-0">
       <p> Associate Member, (2025-present)
