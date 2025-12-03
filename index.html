@@ -48,6 +48,20 @@
       padding-bottom: 15px;/* extra space below the text */
     }
   }
+
+  .section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #17a2b8;           /* Bootstrap text-info color */
+    margin-bottom: 8px;       /* space between title and underline */
+  }
+
+  .section-underline {
+    width: 45px;              /* length of underline */
+    height: 3px;              /* thickness */
+    background-color: #17a2b8;
+    margin-bottom: 22px;      /* spacing below the underline */
+  }
   </style>
 </head>
 <body>
@@ -150,10 +164,12 @@
   </div>
 </div>
 
-<div class="container" style="padding-left:30px;margin-top:20px; border-width:0px 0px 1px 0px; border-color:#808080; border-style: dotted; padding-bottom:25px;">
+<div class="container" style="padding-left:30px;margin-top:20px; border-width:0px 0px 1px 0px; border-color:#808080; border-style: dotted; padding-bottom:25px;"> 
   <div class="row">
     <div class="col-md-3 col-12 mb-2 mb-md-0">
-      <strong class="text-info" style="text-transform:uppercase;">Research Interests</strong>
+      <!-- <strong class="text-info" style="text-transform:uppercase;">Research Interests</strong> -->
+      <div class="section-title">Research Interests</div>
+      <div class="section-underline"></div>
     </div>
     <div class="d-none d-md-block" style="width:25px;"></div>
 
@@ -168,6 +184,8 @@
     </div>
   </div>
 </div>
+
+<div class="section-divider"></div>
 
 <div class="container" style="padding-left:30px;margin-top:40px;">
   <div class="row">
@@ -184,7 +202,8 @@
 <div class="container" style="padding-left:30px;margin-top:20px;">
   <div class="row">
   <div class="col-md-3 col-12 mb-2 mb-md-0">
-    <strong class="text-info" style="text-transform:uppercase;">Education</strong>
+    <div class="section-title">Education</div>
+    <div class="section-underline"></div>
   </div>
   <!-- <div class="col-1 nav flex-column nav-pills">
     <p class="nav-link active"  style="text-transform:uppercase;"><strong>Education</strong></a>
